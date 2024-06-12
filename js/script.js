@@ -8,6 +8,9 @@ var pontos = false;
 var contarMaisUm =0 ;
 var incremendoDeVelocidade = 1000;
 var contarcinco = 0;
+
+audiomorreu.style.display = 'none';// esconde o player de audio
+audiomoeda.style.display = 'none';
 const b = () => // adicionar a função pular a classe mario 
 {
 
