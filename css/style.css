@@ -1,0 +1,94 @@
+*
+{
+    margin: 0;
+        padding: 0;
+        box-sizing:  border-box;
+
+
+
+}
+
+.contador
+
+{
+    font-size: 80px;
+    
+}
+.nuvem
+{
+position: absolute;
+width:400px ;
+animation: nuvem 20s infinite linear;
+
+}
+.game-board 
+{
+    width:100%;
+    height:500px;
+    border-bottom: 15px solid #2eff6c;
+    margin:0  auto;
+    position:relative;
+    overflow: hidden;
+    background:linear-gradient( rgb(118, 172, 233) ,rgb(255, 255, 255) );
+
+
+}
+.pipe
+{
+    position:absolute;
+    right: -120%;
+    bottom:0;
+    width: 80px;
+    animation: movercano 1000ms infinite linear; 
+
+
+    
+}
+.mario
+{
+
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    
+
+}
+.pular
+{
+    
+    animation:pular 500ms  ease-out;
+    
+
+}
+@keyframes movercano{
+    from
+    {
+       left: -130%;
+
+    }
+
+    to
+    {
+        right: 100%;
+
+    }
+
+   
+
+    }
+    
+    @keyframes pular{ 
+
+        0%{ bottom:0;}
+       40%{bottom: 180px;}
+       50%{bottom: 180px;}
+      100%{ bottom: 0;}
+} 
+
+@keyframes nuvem {
+
+    from{ right: -600px;}
+
+    to{right: 100%;}
+    
+}
